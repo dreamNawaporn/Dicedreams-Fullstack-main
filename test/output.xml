@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.4 on darwin)" generated="2024-09-06T09:58:33.380547" rpa="false" schemaversion="5">
+<suite id="s1" name="Post" source="/Users/macbook/Desktop/Dicedreams-Fullstack-main/test/Post.robot">
+<test id="s1-t1" name="Search Google" line="16">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-06T09:58:33.783166" level="INFO">Opening browser 'chrome' to base url 'https://dicedreams-font-end.vercel.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-06T09:58:33.782499" elapsed="12.399966"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-06T09:58:46.240048" level="INFO">Clicking button 'css=.MuiButton-text'.</msg>
+<arg>css=.MuiButton-text</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T09:58:46.187980" elapsed="0.317816"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-06T09:58:47.508931" level="INFO">Slept 1 second.</msg>
+<arg>${Delay}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-06T09:58:46.506349" elapsed="1.002818"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-06T09:58:47.510511" level="INFO">Clicking button 'id=identifier'.</msg>
+<arg>id=identifier</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T09:58:47.510070" elapsed="0.122516"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-06T09:58:47.636940" level="INFO">Typing text 'nawadr' into text field 'name=identifier'.</msg>
+<arg>name=identifier</arg>
+<arg>nawadr</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T09:58:47.633474" elapsed="0.476804"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-06T09:58:48.111225" level="INFO">Clicking button 'id=loginPassword'.</msg>
+<arg>id=loginPassword</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T09:58:48.110846" elapsed="0.270596"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-06T09:58:48.396526" level="INFO">Typing text '55667788b' into text field 'name=loginPassword'.</msg>
+<arg>name=loginPassword</arg>
+<arg>55667788b</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T09:58:48.391955" elapsed="0.222703"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-06T09:58:48.615417" level="INFO">Clicking button 'xpath=//div[@id='root']/div/main/div/div/div[2]/div[3]/button'.</msg>
+<arg>xpath=//div[@id='root']/div/main/div/div/div[2]/div[3]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T09:58:48.615082" elapsed="0.156757"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-06T09:58:48.772606" level="INFO">Clicking button 'xpath=//button[contains(@class, 'MuiButton-contained') and contains(text(), 'Post')]'.</msg>
+<msg time="2024-09-06T09:58:50.799368" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-103.png"&gt;&lt;img src="selenium-screenshot-103.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-06T09:58:50.799698" level="FAIL">Button with locator 'xpath=//button[contains(@class, 'MuiButton-contained') and contains(text(), 'Post')]' not found.</msg>
+<arg>xpath=//button[contains(@class, 'MuiButton-contained') and contains(text(), 'Post')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-06T09:58:48.772302" elapsed="2.036202">Button with locator 'xpath=//button[contains(@class, 'MuiButton-contained') and contains(text(), 'Post')]' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=post-button</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-09-06T09:58:50.809214" elapsed="0.000061"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>document.querySelector("#post-button").scrollIntoView(true);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2024-09-06T09:58:50.809691" elapsed="0.000048"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>${Delay}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-09-06T09:58:50.810079" elapsed="0.000062"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>document.querySelector("#post-button")?.click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2024-09-06T09:58:50.810625" elapsed="0.000072"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-09-06T09:58:50.810987" elapsed="0.000086"/>
+</kw>
+<status status="FAIL" start="2024-09-06T09:58:33.780768" elapsed="17.031199">Button with locator 'xpath=//button[contains(@class, 'MuiButton-contained') and contains(text(), 'Post')]' not found.</status>
+</test>
+<status status="FAIL" start="2024-09-06T09:58:33.382359" elapsed="17.432732"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Post">Post</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
