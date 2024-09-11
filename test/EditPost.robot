@@ -3,7 +3,7 @@ Library           SeleniumLibrary
 
 *** Variables ***
 ${Browser}  chrome
-${URL}   http://localhost:5173/
+${URL}   https://dicedreams-font-end.vercel.app/
 ${Delay}    1s
 
 
