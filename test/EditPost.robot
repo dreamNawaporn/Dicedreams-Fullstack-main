@@ -16,21 +16,20 @@ ${Delay}    1s
 Search Google
     Open Browser    ${URL}    ${Browser}
     Click Button    css=.MuiButton-text
-    Click Button     -
-    Click Button     -
-    Click Button   id=name_games
-    Input Text      name=name_games  Werewolf
-    Click Button   id=detail_post
-    Input Text      name=detail_post  เอา Werewolf ตัวเสริมมาด้วยก็ดีนะ เพราะเรามีแค่ตัวหลัก
-    Click Button   id=num_people
-    Input Text      name=num_people  3
-    Click Button   id=date_meet
-    Input Text      name=date_meet  07/13/2024
-    Click Button   id=time_meet
-    Input Text      name=time_meet  18:00:00
-    Click Button   id=games_image
-    Input Text      name=games_image  2e0c0d0a-b71c-486b-a57f-7d85b6f7d558.jpeg
-    Click Button     -
-    Page Should Contain    แก้ไขโพสต์นัดเล่น สำเร็จ
+    sleep    ${Delay}
+    Click Button   id=identifier
+    Input Text      name=identifier    nawadr
+    Click Button   id=loginPassword
+    Input Text      name=loginPassword   55667788b 
+    Click Button    xpath=//div[@id='root']/div/main/div/div/div[2]/div[3]/button
+    Maximize Browser Window
+    Sleep    5s
+    Scroll Element Into View    css=h6#username
+    Wait Until Element Is Visible    css=h6#username    60s
+    Click Element    css=h6#username
+    Wait Until Element Is Visible    css=button#long-button    30s
+    Click Element    css=button#long-button
+    
+    #Page Should Contain    แก้ไขโพสต์นัดเล่น สำเร็จ
     Capture Page Screenshot
     Close Browser

@@ -23,7 +23,7 @@ Search Google
     Input Text      name=loginPassword   55667788b 
     Click Button    xpath=//div[@id='root']/div/main/div/div/div[2]/div[3]/button
     #Wait Until Element Is Visible    id=name_games    20s
-    
+
     Wait Until Element Is Visible    id=post-button    20s
     Execute JavaScript    document.querySelector("#post-button")?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     Sleep    ${Delay}
@@ -39,7 +39,7 @@ Search Google
     Click Button    xpath=//button[@aria-label='Choose date']
     Log    Trying to input date
     # Input date directly if necessary
-    Input Text    xpath=//input[@placeholder='MM/DD/YYYY']    09/06/2024
+    Input Text    xpath=//input[@placeholder='MM/DD/YYYY']    09/09/2024
     Wait Until Element Is Visible    xpath=//input[@placeholder='hh:mm aa']    20s
     Log    Trying to input time
     # Input time directly if necessary
