@@ -1,228 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.4 on darwin)" generated="2024-09-06T15:17:24.188919" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.4 on darwin)" generated="2024-09-13T14:04:06.197504" rpa="false" schemaversion="5">
 <suite id="s1" name="Post" source="/Users/macbook/Desktop/Dicedreams-Fullstack-main/test/Post.robot">
 <test id="s1-t1" name="Search Google" line="16">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:24.575808" level="INFO">Opening browser 'chrome' to base url 'https://dicedreams-font-end.vercel.app/'.</msg>
+<msg time="2024-09-13T14:04:06.634884" level="INFO">Opening browser 'chrome' to base url 'https://dicedreams-font-end.vercel.app/'.</msg>
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-06T15:17:24.575371" elapsed="15.369312"/>
+<status status="PASS" start="2024-09-13T14:04:06.634316" elapsed="20.266637"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:40.025299" level="INFO">Clicking button 'css=.MuiButton-text'.</msg>
+<msg time="2024-09-13T14:04:26.946542" level="INFO">Clicking button 'css=.MuiButton-text'.</msg>
 <arg>css=.MuiButton-text</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-06T15:17:40.022612" elapsed="0.575143"/>
+<status status="PASS" start="2024-09-13T14:04:26.932860" elapsed="0.379315"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-06T15:17:41.601855" level="INFO">Slept 1 second.</msg>
+<msg time="2024-09-13T14:04:28.316543" level="INFO">Slept 1 second.</msg>
 <arg>${Delay}</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-06T15:17:40.598504" elapsed="1.003509"/>
+<status status="PASS" start="2024-09-13T14:04:27.313204" elapsed="1.003487"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:41.602898" level="INFO">Clicking button 'id=identifier'.</msg>
+<msg time="2024-09-13T14:04:28.317465" level="INFO">Clicking button 'id=identifier'.</msg>
 <arg>id=identifier</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-06T15:17:41.602433" elapsed="0.125931"/>
+<status status="PASS" start="2024-09-13T14:04:28.317093" elapsed="0.263487"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:41.733094" level="INFO">Typing text 'nawadr' into text field 'name=identifier'.</msg>
+<msg time="2024-09-13T14:04:28.582921" level="INFO">Typing text 'nawadr' into text field 'name=identifier'.</msg>
 <arg>name=identifier</arg>
 <arg>nawadr</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-06T15:17:41.730214" elapsed="0.499583"/>
+<status status="PASS" start="2024-09-13T14:04:28.582357" elapsed="0.397030"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:42.230861" level="INFO">Clicking button 'id=loginPassword'.</msg>
+<msg time="2024-09-13T14:04:28.980406" level="INFO">Clicking button 'id=loginPassword'.</msg>
 <arg>id=loginPassword</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-06T15:17:42.230482" elapsed="0.267852"/>
+<status status="PASS" start="2024-09-13T14:04:28.979818" elapsed="0.459921"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:42.499353" level="INFO">Typing text '55667788b' into text field 'name=loginPassword'.</msg>
+<msg time="2024-09-13T14:04:29.440525" level="INFO">Typing text '55667788b' into text field 'name=loginPassword'.</msg>
 <arg>name=loginPassword</arg>
 <arg>55667788b</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-06T15:17:42.498824" elapsed="0.306259"/>
+<status status="PASS" start="2024-09-13T14:04:29.440149" elapsed="0.397885"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:42.808463" level="INFO">Clicking button 'xpath=//div[@id='root']/div/main/div/div/div[2]/div[3]/button'.</msg>
+<msg time="2024-09-13T14:04:29.838727" level="INFO">Clicking button 'xpath=//div[@id='root']/div/main/div/div/div[2]/div[3]/button'.</msg>
 <arg>xpath=//div[@id='root']/div/main/div/div/div[2]/div[3]/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-06T15:17:42.806803" elapsed="0.164526"/>
+<status status="PASS" start="2024-09-13T14:04:29.838442" elapsed="0.178629"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=post-button</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-06T15:17:42.971823" elapsed="1.967447"/>
+<status status="PASS" start="2024-09-13T14:04:30.020804" elapsed="1.928946"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:44.941704" level="INFO">Executing JavaScript:
+<msg time="2024-09-13T14:04:31.954970" level="INFO">Executing JavaScript:
 document.querySelector("#post-button")?.scrollIntoView({ behavior: 'smooth', block: 'center' });
 Without any arguments.</msg>
 <arg>document.querySelector("#post-button")?.scrollIntoView({ behavior: 'smooth', block: 'center' });</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-09-06T15:17:44.940060" elapsed="0.020158"/>
+<status status="PASS" start="2024-09-13T14:04:31.950841" elapsed="0.081997"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-06T15:17:45.969289" level="INFO">Slept 1 second.</msg>
+<msg time="2024-09-13T14:04:33.035022" level="INFO">Slept 1 second.</msg>
 <arg>${Delay}</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-06T15:17:44.960538" elapsed="1.010622"/>
+<status status="PASS" start="2024-09-13T14:04:32.033846" elapsed="1.001594"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:46.071478" level="INFO">Executing JavaScript:
+<msg time="2024-09-13T14:04:33.046460" level="INFO">Executing JavaScript:
 document.querySelector("#post-button")?.click();
 Without any arguments.</msg>
 <arg>document.querySelector("#post-button")?.click();</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-09-06T15:17:46.053083" elapsed="0.530864"/>
+<status status="PASS" start="2024-09-13T14:04:33.040724" elapsed="0.414018"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-09-13T14:04:54.818581" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-13T14:04:54.824101" level="FAIL">Element 'id=name_games' not visible after 20 seconds.</msg>
 <arg>id=name_games</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-06T15:17:46.669024" elapsed="0.071096"/>
+<status status="FAIL" start="2024-09-13T14:04:33.455349" elapsed="21.386738">Element 'id=name_games' not visible after 20 seconds.</status>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:46.741286" level="INFO">Typing text 'หมาป่า' into text field 'id=name_games'.</msg>
 <arg>id=name_games</arg>
 <arg>หมาป่า</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-06T15:17:46.740756" elapsed="0.259272"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.846877" elapsed="0.000162"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:47.001180" level="INFO">Executing JavaScript:
-document.querySelector("#name_games").scrollIntoView({ behavior: 'smooth', block: 'center' });
-Without any arguments.</msg>
 <arg>document.querySelector("#name_games").scrollIntoView({ behavior: 'smooth', block: 'center' });</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-09-06T15:17:47.000510" elapsed="0.042467"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.847568" elapsed="0.000077"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=detail_post</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-06T15:17:47.045335" elapsed="0.090377"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.848156" elapsed="0.000088"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:47.137417" level="INFO">Executing JavaScript:
-document.querySelector("#detail_post").scrollIntoView({ behavior: 'smooth', block: 'center' });
-Without any arguments.</msg>
 <arg>document.querySelector("#detail_post").scrollIntoView({ behavior: 'smooth', block: 'center' });</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-09-06T15:17:47.136194" elapsed="0.040633"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.848804" elapsed="0.000055"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:47.177706" level="INFO">Typing text 'ต้องการคนมาได้มากกว่าจำนวนที่ใส่ไว้' into text field 'id=detail_post'.</msg>
 <arg>id=detail_post</arg>
 <arg>ต้องการคนมาได้มากกว่าจำนวนที่ใส่ไว้</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-06T15:17:47.177424" elapsed="0.761865"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.849347" elapsed="0.000049"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//div[contains(@class, 'MuiInputBase-root')]</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-06T15:17:47.939890" elapsed="0.044059"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.849675" elapsed="0.000045"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:47.984681" level="INFO">Clicking button 'xpath=//button[@aria-label='Choose date']'.</msg>
 <arg>xpath=//button[@aria-label='Choose date']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-06T15:17:47.984350" elapsed="0.323703"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.849974" elapsed="0.000041"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-09-06T15:17:48.309877" level="INFO">Trying to input date</msg>
 <arg>Trying to input date</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-09-06T15:17:48.308652" elapsed="0.001370"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.850296" elapsed="0.000074"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:48.311413" level="INFO">Typing text '09/09/2024' into text field 'xpath=//input[@placeholder='MM/DD/YYYY']'.</msg>
 <arg>xpath=//input[@placeholder='MM/DD/YYYY']</arg>
 <arg>09/09/2024</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-06T15:17:48.310895" elapsed="0.493977"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.850538" elapsed="0.000036"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//input[@placeholder='hh:mm aa']</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-06T15:17:48.807882" elapsed="0.116285"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.850737" elapsed="0.000034"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-09-06T15:17:48.925191" level="INFO">Trying to input time</msg>
 <arg>Trying to input time</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-09-06T15:17:48.924789" elapsed="0.000534"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.850926" elapsed="0.000034"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:48.926422" level="INFO">Typing text '12:00pm' into text field 'xpath=//input[@placeholder='hh:mm aa']'.</msg>
 <arg>xpath=//input[@placeholder='hh:mm aa']</arg>
 <arg>12:00pm</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-06T15:17:48.926022" elapsed="0.208928"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.856748" elapsed="0.000119"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=num_people</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-06T15:17:49.144667" elapsed="0.063652"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.858222" elapsed="0.000128"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:49.209174" level="INFO">Typing text '5' into text field 'id=num_people'.</msg>
 <arg>id=num_people</arg>
 <arg>5</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-06T15:17:49.208753" elapsed="0.209961"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.860908" elapsed="0.000305"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:49.425819" level="INFO">Executing JavaScript:
-document.getElementById('upload-image-button').click();
-Without any arguments.</msg>
 <arg>document.getElementById('upload-image-button').click();</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-09-06T15:17:49.425167" elapsed="0.036752"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.861888" elapsed="0.000080"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:49.463453" level="INFO">Executing JavaScript:
-document.getElementById('create-post-button').click();
-Without any arguments.</msg>
 <arg>document.getElementById('create-post-button').click();</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-09-06T15:17:49.462605" elapsed="4.680504"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.862514" elapsed="0.000049"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-06T15:17:55.170840" level="INFO">Slept 1 second.</msg>
 <arg>${Delay}</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-06T15:17:54.143793" elapsed="1.027559"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.864468" elapsed="0.000059"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-09-06T15:17:56.358881" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-135.png"&gt;&lt;img src="selenium-screenshot-135.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-09-06T15:17:55.172612" elapsed="1.186532"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.865136" elapsed="0.000273"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-09-06T15:17:56.361576" elapsed="0.803815"/>
+<status status="NOT RUN" start="2024-09-13T14:04:54.866429" elapsed="0.000137"/>
 </kw>
-<status status="PASS" start="2024-09-06T15:17:24.573878" elapsed="32.597081"/>
+<status status="FAIL" start="2024-09-13T14:04:06.631969" elapsed="48.235593">Element 'id=name_games' not visible after 20 seconds.</status>
 </test>
-<status status="PASS" start="2024-09-06T15:17:24.191843" elapsed="33.018306"/>
+<status status="FAIL" start="2024-09-13T14:04:06.201673" elapsed="48.669536"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Post">Post</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Post">Post</stat>
 </suite>
 </statistics>
 <errors>

@@ -3,7 +3,7 @@ Library           SeleniumLibrary
 
 *** Variables ***
 ${Browser}  chrome
-${URL}   https://dicedreams-font-end.vercel.app/
+${URL}   http://localhost:5173/
 ${Delay}    1s
 
 
@@ -13,17 +13,17 @@ ${Delay}    1s
 
 
 *** Test Cases ***
-Search Google
+TC1001 กราเข้าสู่ระบบ
     Open Browser    ${URL}    ${Browser}
     
     Click Button    css=.MuiButton-text
     sleep    ${Delay}
     Click Button   id=identifier
-    Input Text      name=identifier    nawadr
+    Input Text      name=identifier    WOJA2
     Click Button   id=loginPassword
-    Input Text      name=loginPassword   55667788b 
+    Input Text      name=loginPassword   111111 
     sleep    ${Delay}
-    Click Button    xpath=//div[@id='root']/div/main/div/div/div[2]/div[3]/button
+     Click Button    xpath=//div[@id='root']/div/main/div/div/div[2]/div[3]/button
      sleep    ${Delay}
      Capture Page Screenshot
     Close Browser
