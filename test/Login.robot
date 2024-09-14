@@ -3,28 +3,28 @@ Library           SeleniumLibrary
 
 *** Variables ***
 ${Browser}  chrome
-${URL}   http://localhost:5173/
+${URL}   https://dicedreams-font-end.vercel.app
 ${Delay}    1s
 
 
 
-*** Keywords ***
-
-
 
 *** Test Cases ***
-TC1001 กราเข้าสู่ระบบ
+TC1001 การเข้าสู่ระบบ
     Open Browser    ${URL}    ${Browser}
     
-    Click Button    css=.MuiButton-text
-    sleep    ${Delay}
-    Click Button   id=identifier
+    Click Button    id=login-button
+    Wait Until Element Is Visible  xpath=//div[@id='login-form']/div  10s
     Input Text      name=identifier    WOJA2
     Click Button   id=loginPassword
     Input Text      name=loginPassword   111111 
-    sleep    ${Delay}
-     Click Button    xpath=//div[@id='root']/div/main/div/div/div[2]/div[3]/button
-     sleep    ${Delay}
-     
-     Capture Page Screenshot
+    Click Button    id=login-submit-button
+    
+    Capture Page Screenshot
     Close Browser
+
+*** Keywords ***
+Check Title blog  
+    Page Should Contain   ${BLOG_TITLE2}
+    Sleep    1
+    Capture Page Screenshot
