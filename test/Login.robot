@@ -25,5 +25,6 @@ TC1001 กราเข้าสู่ระบบ
     sleep    ${Delay}
      Click Button    xpath=//div[@id='root']/div/main/div/div/div[2]/div[3]/button
      sleep    ${Delay}
+     
      Capture Page Screenshot
     Close Browser

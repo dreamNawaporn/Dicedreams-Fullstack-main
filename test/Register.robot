@@ -13,21 +13,21 @@ ${Delay}    1s
 
 
 *** Test Cases ***
-Search Google
+TC2001การสมัครสมาชิก
     Open Browser    ${URL}    ${Browser}
-    Click Button    id=register-button
-    Click Button    id=first_name
-    Input Text    id=first_name    nawaporn
-    Click Button    id=last_name
-    Input Text    id=last_name    boongon
-    Click Button    id=username
-    Input Text    id=username    nawadr
-    Click Button    id=phone_number
-    Input Text    id=phone_number    0987654321
-    Click Button    id=email
-    Input Text    id=email    nawaporn2@gmail.com
-    Click Button    id=password
-    Input Text    id=password    55667788b
+    
+    Click Button    css=.MuiButton-text
+    sleep    ${Delay}
+    Click Button   id=name_games
+    Input Text      id=name_games    หมาป่า
+    Click Button   id=detail_post
+    Input Text      id=detail_post    ต้องการจำนวนมากมาเกินที่กำหนดได้
+    Click Button   css=#date_meet path
+    Click Button  xpath=(//button[@type='button'])[25]
+    Click Button   id=num_people
+    Input Text      id=num_people    7
+    Click Button   xpath=//div[@id='root']/div/main/div/div/div/form/span
+    Input Text      css=input:nth-child(7)   C:\fakepath\สีเหลือง สีฟ้า ภาพประกอบ น่ารัก Desktop Wallpaper.png
     sleep    ${Delay}
     Wait Until Element Is Visible    xpath=//input[@placeholder='MM/DD/YYYY' and @type='text']    timeout=10s
     Click Element    xpath=//input[@placeholder='MM/DD/YYYY' and @type='text']
